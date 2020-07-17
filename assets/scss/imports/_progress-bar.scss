@@ -1,0 +1,51 @@
+.progressbar-wrapper {
+    width: 360px;
+    .progressbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            position: relative;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #707070;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 175px;
+                height: 2px;
+                background: #707070;
+                top: 45%;
+                left: -85px;
+                z-index: -1;
+            }
+
+            &:last-child:before {
+                width: 87.5px;
+            }
+            
+
+            &.active {
+                background-color: #BDB130;
+                border-color: #BDB130;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 87.5px;
+                    height: 2px;
+                    background: #BDB130;
+                    top: 45%;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DES.CA</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;" xml:space="preserve" width="512px" height="512px"><g><path style="fill:#2196F3;" d="M501.342,245.185H36.424L210.227,71.404c4.093-4.237,3.975-10.99-0.262-15.083  c-4.134-3.992-10.687-3.992-14.82,0l-192,192c-4.171,4.16-4.179,10.914-0.019,15.085c0.006,0.006,0.013,0.013,0.019,0.019l192,192  c4.093,4.237,10.845,4.354,15.083,0.262c4.237-4.093,4.354-10.845,0.262-15.083c-0.086-0.089-0.173-0.176-0.262-0.262  L36.424,266.519h464.917c5.891,0,10.667-4.776,10.667-10.667S507.233,245.185,501.342,245.185z" data-original="#2196F3"/><path d="M202.675,458.519c-2.831,0.005-5.548-1.115-7.552-3.115l-192-192c-4.164-4.165-4.164-10.917,0-15.083l192-192  c4.237-4.093,10.99-3.975,15.083,0.262c3.992,4.134,3.992,10.687,0,14.82L25.758,255.852L210.206,440.3  c4.171,4.16,4.179,10.914,0.019,15.085C208.224,457.39,205.508,458.518,202.675,458.519z" data-original="#000000" class="active-path" style="fill:#252525" data-old_color="#000000"/><path d="M501.342,266.519H10.675c-5.891,0-10.667-4.776-10.667-10.667s4.776-10.667,10.667-10.667h490.667  c5.891,0,10.667,4.776,10.667,10.667S507.233,266.519,501.342,266.519z" data-original="#000000" class="active-path" style="fill:#252525" data-old_color="#000000"/></g> </svg>
+                    Back
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="right-block">
+                    <div class="sign-in">Sign In</div>
+                    <div class="language-block">
+                        <span>FR</span> | <span>ENG</span>
+                    </div>
+                    <div class="card-block">
+                        <span>01</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.71" height="21.176" viewBox="0 0 21.71 21.176"><defs><style>.a{fill:#f16649;}</style></defs><g transform="translate(638.806 974.9)"><g transform="translate(-638.806 -974.9)"><path class="a" d="M26.286,17.5c0,4.616-1.822,8.174-4.246,8.174s-4.255-3.583-4.255-8.2a.961.961,0,0,1-.421-.748.891.891,0,0,1,.9-.882h.842a.876.876,0,0,1,.474,1.63c0,4.115,1.458,6.436,2.455,6.436s2.473-2.559,2.46-6.466a.923.923,0,0,1-.381-.718.891.891,0,0,1,.9-.882h.842a.891.891,0,0,1,.9.882.919.919,0,0,1-.483.774Zm6.577,13.625L29.632,11.839a.894.894,0,0,0-.891-.739h-13.4a.9.9,0,0,0-.891.739L11.2,31.247a.89.89,0,0,0,.891,1.024H32A.88.88,0,0,0,32.863,31.126Z" transform="translate(-11.194 -11.1)"/></g></g></svg>
+                    </div>
+                </div>
+                <div class="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+                    id="Capa_1" x="0px" y="0px" viewBox="0 0 409.6 409.6" style="enable-background:new 0 0 409.6 409.6;" 
+                    xml:space="preserve" width="22px" class=""><g><g>
+                        <g>
+                            <path d="M392.533,17.067H17.067C7.641,17.067,0,24.708,0,34.133S7.641,51.2,17.067,51.2h375.467    
+                            c9.426,0,17.067-7.641,17.067-17.067S401.959,17.067,392.533,17.067z" data-original="#000000" 
+                            class="active-path" data-old_color="#000000" fill="#676464"/>
+                        </g>
+                    </g><g>
+                        <g>
+                            <path d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467    c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#676464"/>
+                        </g>
+                    </g><g>
+                        <g>
+                            <path d="M392.533,358.4H17.067C7.641,358.4,0,366.041,0,375.467s7.641,17.067,17.067,17.067h375.467    c9.426,0,17.067-7.641,17.067-17.067S401.959,358.4,392.533,358.4z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#676464"/>
+                        </g>
+                    </g></g> </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="personalized-frames"> 
+       <div class="container">
+            
+
+
+            <div class="personalized-frames_header">Personalized Frames</div>
+
+            <div class="step-by-step-progres-parent">
+                <div class="reset"> <span class="black">&#x2715</span> Reset</div>
+                <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-blocks-parent">
+
+                    <div class="left-col">
+                        <div class="preview-frame-parent">
+                            <div class="frame">
+                                <div id="top" class="fr top"></div>
+                                <div id="right" class="fr right"></div>
+                                <div id="bottom" class="fr bottom"></div>
+                                <div id="left" class="fr left"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-col">
+
+                        <div class="field-parent">
+                            <div class="field-header">Add your text</div>
+                            <div class="plus"><span>&#43;</span></div>
+                        </div>
+
+                        <div class="input-parent-block">
+                            <input id="top-input" type="text" placeholder="Enter your top text here" maxlength="15">
+                            <div class="limitor"><span class="top-counter">0</span>/15</div>
+                        </div>
+                        <div class="toggle-inputs">
+                            <div class="input-parent-block">
+                                <input id="bottom-input" type="text" placeholder="Enter your bottom text here" maxlength="15">
+                                <div class="limitor"><span class="bottom-counter">0</span>/15</div>
+                            </div>
+                            <div class="input-parent-block">
+                                <input id="left-input" type="text" placeholder="Enter your left text here" maxlength="20">
+                                <div class="limitor"><span class="left-counter">0</span>/20</div>
+                            </div>
+                            <div class="input-parent-block">
+                                <input id="right-input" type="text" placeholder="Enter your right text here" maxlength="20">
+                                <div class="limitor"><span class="right-counter">0</span>/20</div>
+                            </div>
+                        </div>
+
+                        <button class="apply-button">Apply</button>
+
+                        <div class="field-parent">
+                            <div class="field-header">Available fonts</div>
+                        </div>
+
+                        <div class="fonts-list">
+                            <div class="font-item">
+                                <label>
+                                    <div class="font-prev">AB</div>
+                                    <input name="font" type="radio" value='classic'>
+                                </label>
+                                <div class="font-name">Classic</div>
+                            </div>
+                            <div class="font-item">
+                                <label class="checked-font">
+                                    <div class="font-prev">AB</div>
+                                    <input name="font" type="radio" value='rounded' checked>
+                                </label>
+                                <div class="font-name">Rounded</div>
+                            </div>
+                            <div class="font-item">
+                                <label>
+                                    <div class="font-prev">AB</div>
+                                    <input name="font" type="radio" value='script'>
+                                </label>
+                                <div class="font-name">Script</div>
+                            </div>
+                            <div class="font-item">
+                                <label>
+                                    <div class="font-prev">AB</div>
+                                    <input name="font" type="radio" value='chunky'>
+                                </label>
+                                <div class="font-name">Chunky</div>
+                            </div>
+                        </div>
+
+                        <div class="field-parent">
+                            <div class="field-header">Choose stickers</div>
+                        </div>
+                        
+                      
+                            <div id="stickerCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="sticker-items-parent">
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35.603" height="75.742" viewBox="0 0 35.603 75.742"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M80.167,12.327a1.659,1.659,0,0,1,.261-.361,4.024,4.024,0,0,1,1.112-.631A4.48,4.48,0,0,0,83.469,9.3a4.285,4.285,0,0,0,.452-1.921,3.924,3.924,0,0,0-.884-2.721,6.785,6.785,0,0,0-2.9-1.435c-.51-.153-.962-.282-1.41-.415s-.9-.236-1.423-.361a6.8,6.8,0,0,0-3.24-.224,3.92,3.92,0,0,0-2.174,1.908,4.285,4.285,0,0,0-.577,1.888,4.48,4.48,0,0,0,.647,2.726A4.045,4.045,0,0,1,72.6,9.855a1.659,1.659,0,0,1,.046.444H72.6a1.933,1.933,0,0,0-.456.079,1.444,1.444,0,0,0-.763.481,1.245,1.245,0,0,0-.195.436l-.772,2.862a1.244,1.244,0,0,0-.05.477,1.444,1.444,0,0,0,.415.8,1.514,1.514,0,0,0,.668.382c-.415,1.245-.863,2.443-1.274,3.671s-.759,2.394-1.191,3.572a43.342,43.342,0,0,1-2.2,4.874,32.557,32.557,0,0,1-3.277,5.3c-.875,1.108-1.867,2.12-2.813,3.182a28.7,28.7,0,0,0-5.721,9.2c-.415,1.025-.784,2.074-1.1,3.12l-5.24,19.436a4.592,4.592,0,0,0-.257,1.037,3.982,3.982,0,0,0,.311,2.228A4.111,4.111,0,0,0,50.3,73.1a5.024,5.024,0,0,0,1.307.548l7.442,2.008,7.447,2.008a5.012,5.012,0,0,0,1.4.183,4.115,4.115,0,0,0,2.24-.626,3.978,3.978,0,0,0,1.39-1.767,4.563,4.563,0,0,0,.3-1.025l5.24-19.419c.253-1.074.452-2.157.614-3.248a31.714,31.714,0,0,0,.382-4.9,31.574,31.574,0,0,0-.68-5.965c-.282-1.39-.626-2.767-.83-4.148a32.528,32.528,0,0,1-.166-6.223,43.342,43.342,0,0,1,.548-5.318c.216-1.245.51-2.456.767-3.684s.485-2.547.747-3.812a1.518,1.518,0,0,0,.767,0,1.444,1.444,0,0,0,.763-.481,1.245,1.245,0,0,0,.195-.436l.772-2.862a1.244,1.244,0,0,0,.05-.477,1.448,1.448,0,0,0-.415-.8,1.916,1.916,0,0,0-.353-.3Z" transform="translate(-48.326 -2.103)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36.848" height="75.548" viewBox="0 0 36.848 75.548"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M47.47,5.517c.539,2.265,1.05,4.522,1.464,6.8.668,3.605,1.116,7.252,1.709,10.857.365,2.261.8,4.476,1.311,6.729a19,19,0,0,0,2.195,6.119,11.437,11.437,0,0,0,3.182,3.248,12.126,12.126,0,0,0,2.253,1.211,18.937,18.937,0,0,1,2.074.875A5.978,5.978,0,0,1,63.367,42.8a7.21,7.21,0,0,1,1.112,1.941,17.361,17.361,0,0,1,.577,1.921c1.1,4.207,2.406,8.343,3.572,12.524q.566,2.029,1.074,4.078a19.245,19.245,0,0,1,.722,4.63,6.638,6.638,0,0,1-.73,3.319,7.584,7.584,0,0,1-1.888,2.02,15.931,15.931,0,0,1-3.107,2,1.746,1.746,0,0,0-.523.382.643.643,0,0,0-.158.386,1.245,1.245,0,0,0,.315.987.83.83,0,0,0,.444.162,4.148,4.148,0,0,0,.83,0,39.3,39.3,0,0,0,6.144-1.033q1.456-.344,2.9-.743t2.85-.875a39.276,39.276,0,0,0,5.808-2.352,4.148,4.148,0,0,0,.693-.415.83.83,0,0,0,.29-.369,1.245,1.245,0,0,0-.249-1.008.643.643,0,0,0-.336-.245,1.722,1.722,0,0,0-.647-.05,15.98,15.98,0,0,1-3.734-.091,7.588,7.588,0,0,1-2.663-.738,6.638,6.638,0,0,1-2.348-2.431,19.265,19.265,0,0,1-1.8-4.323q-.635-2.008-1.211-4.041C70.112,54.27,69.067,50.059,67.81,45.9a17.307,17.307,0,0,1-.51-1.937,7.206,7.206,0,0,1-.062-2.236,5.982,5.982,0,0,1,.7-2.128,18.938,18.938,0,0,1,1.328-1.85,12.13,12.13,0,0,0,1.286-2.207A11.425,11.425,0,0,0,71.568,31.1a18.931,18.931,0,0,0-1.328-6.364c-.747-2.186-1.543-4.31-2.4-6.418-1.373-3.381-2.9-6.729-4.211-10.151-.83-2.157-1.572-4.348-2.286-6.542Z" transform="translate(-47.47 -1.63)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="68.856" height="64.874" viewBox="0 0 68.856 64.874"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M29.722,42.3c.083-3.319.473-6.588.714-9.927a26.4,26.4,0,0,1,1.174-7.509,10.906,10.906,0,0,1,2.016-3.385,10.487,10.487,0,0,1,1.813-1.61,10.5,10.5,0,0,1,1.813,1.605,10.906,10.906,0,0,1,2.016,3.385,26.66,26.66,0,0,1,1.174,7.509c.241,3.34.631,6.613.714,9.927q.112,1.074.191,2.153a26.742,26.742,0,0,0,2.879,1.56l.249.116q0-.738.066-1.477a20.059,20.059,0,0,1,.527-3.186,18.568,18.568,0,0,1,6.036.776q-.253.884-.5,1.771-.564,2.037-1.091,4.086l.962.34c2.377.83,4.733,1.709,7.148,2.489A33.206,33.206,0,0,1,64.805,53.8a11.378,11.378,0,0,1,2.12,1.659,11.591,11.591,0,0,1,2.941,5.393c-3.676-.987-7.376-1.888-11.076-2.784-5.766-1.394-11.541-2.779-17.424-3.642q-.054.83-.12,1.618-.46,4.646-1.012,9.288-.647,5.642-1.477,11.271a31.669,31.669,0,0,0,2.535,1.941,26.806,26.806,0,0,1,3.759,2.489,4.31,4.31,0,0,1,1.245,1.813,3.879,3.879,0,0,1,.041,1.9c-1.116-.523-2.257-.983-3.418-1.394a28.976,28.976,0,0,0-4.431-1.245q-.83-.153-1.659-.241H34.069q-.83.091-1.659.241a28.977,28.977,0,0,0-4.431,1.245c-1.162.415-2.307.871-3.418,1.394a3.879,3.879,0,0,1,.041-1.9,4.31,4.31,0,0,1,1.245-1.813,25.431,25.431,0,0,1,3.759-2.489A31.675,31.675,0,0,0,32.119,76.6q-.83-5.625-1.5-11.271-.552-4.638-.991-9.288-.071-.809-.12-1.618c-5.862.863-11.641,2.248-17.424,3.642-3.7.9-7.4,1.8-11.076,2.784a11.591,11.591,0,0,1,2.941-5.393A11.379,11.379,0,0,1,6.071,53.8a32.955,32.955,0,0,1,7.181-2.871c2.464-.8,4.771-1.659,7.148-2.489l.962-.34q-.531-2.037-1.1-4.082-.245-.888-.5-1.771a18.568,18.568,0,0,1,6.036-.776,20.058,20.058,0,0,1,.527,3.186q.062.738.066,1.477l.249-.116a26.74,26.74,0,0,0,2.879-1.56Q29.61,43.375,29.722,42.3Z" transform="translate(-1.01 -19.87)"/></svg>
+                                            </div>
+                                            
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="70.598" height="76.902" viewBox="0 0 70.598 76.902"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M73.1,63,60.623,41.393,69.1,26.721a2.161,2.161,0,0,0-1.873-3.246H50.274L37.8,1.86,25.306,23.466H8.368a2.161,2.161,0,0,0-1.873,3.255L14.975,41.4,2.5,63H27.45l8.485,14.685a2.165,2.165,0,0,0,3.746,0L48.157,63ZM65.6,58.672H50.646l7.48-12.953Zm-19.954,0h-15.7L19.992,41.4l7.834-13.6H47.754l7.852,13.6ZM63.479,27.793l-5.354,9.273-5.363-9.273ZM37.795,10.522l7.48,12.944H30.324ZM12.11,27.793H22.831L17.472,37.07ZM9.988,58.677l7.48-12.953,7.484,12.949Zm27.806,13.6L32.445,63H43.153Z" transform="translate(-2.5 -1.86)"/></svg>
+                                            </div>
+                                            
+                                        </div>
+                                     </div>
+                                    <div class="carousel-item">
+                                        <div class="sticker-items-parent">
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="68.041" height="68.57" viewBox="0 0 68.041 68.57"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M35.869,26.7c-.6,0-.27-.593-.415-.9a18.8,18.8,0,0,0-1-2.112,12.031,12.031,0,0,0-4.563-4.671c-6.1-3.58-11-3.211-17.216-.5C3.473,22.53.756,33.27,2.229,42.115c1.659,9.956,6.928,16.872,13,24.2a81.679,81.679,0,0,0,9.658,9.956c1.759,1.51,3.58,2.941,5.426,4.343q1.386,1.054,2.784,2.074l1.394,1.041c.465.348.5,1.713,1.39,1.041,12.445-9.413,30.674-24.845,33.64-42.675,1.473-8.845-1.245-19.585-10.442-23.6-6.223-2.713-11.114-3.078-17.212.494a12.031,12.031,0,0,0-4.576,4.7,18.8,18.8,0,0,0-1.025,2.116C36.138,26.106,36.466,26.7,35.869,26.7Z" transform="translate(-1.852 -16.383)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="42.082" height="75.859" viewBox="0 0 42.082 75.859"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M58.035,59.48l16.9,3.622C71.157,56.327,67.378,49.557,63.2,41.907l7.409.709c-3.539-5.932-7.073-11.869-11.636-19.572l7.144,1.245L53.891,2.14,41.661,24.26l7.144-1.245c-4.563,7.7-8.1,13.64-11.636,19.572l7.409-.68C40.4,49.557,36.646,56.327,32.85,63.1l16.9-3.622V78h8.3Z" transform="translate(-32.85 -2.14)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.236" height="69.401" viewBox="0 0 33.236 69.401"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M11.369,25.777V69.4h10.5V25.777H33.236V15.283H21.867V0h-10.5V15.283H0V25.777Z"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="67.197" height="69.141" viewBox="0 0 67.197 69.141"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M70.216,54.239A35.046,35.046,0,1,1,29.939,6.2,31.354,31.354,0,0,0,70.216,54.239Z" transform="translate(-3.019 -6.2)"/></svg>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <div class="carousel-item">
+                                        <div class="sticker-items-parent">
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="68.367" height="73.544" viewBox="0 0 68.367 73.544"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M69.847,40.868a38.129,38.129,0,0,0-15.934,4.447,30.05,30.05,0,0,0-10.006,8.43c-2.825,3.829-4.46,8.5-5.837,13.155a74.383,74.383,0,0,0-2.41,10.745A74.315,74.315,0,0,0,33.249,66.9c-1.357-4.65-3.008-9.326-5.833-13.155a29.969,29.969,0,0,0-10.006-8.43A38.124,38.124,0,0,0,1.48,40.868a38.116,38.116,0,0,0,15.93-4.451,29.957,29.957,0,0,0,10.006-8.426c2.825-3.85,4.476-8.509,5.837-13.146A74.33,74.33,0,0,0,35.663,4.1a74.394,74.394,0,0,0,2.406,10.745c1.377,4.638,3.012,9.3,5.837,13.146a29.969,29.969,0,0,0,10.006,8.43,38.12,38.12,0,0,0,15.934,4.447Z" transform="translate(-1.48 -4.1)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="68.293" height="34.716" viewBox="0 0 68.293 34.716"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M6.808,78.575c2.074,9.388,15.457,9.417,17.577.033H45.741c2.107,9.33,15.383,9.376,17.556.062h3.277a3.887,3.887,0,0,0,1.112-.3,4.36,4.36,0,0,0,2.008-2.074,6.326,6.326,0,0,0,.589-3.037,7.5,7.5,0,0,0-.415-2.153,9.434,9.434,0,0,0-2.074-3.319,13.1,13.1,0,0,0-2.215-1.9,12.678,12.678,0,0,0-3.734-1.751,26.19,26.19,0,0,0-3.1-.556,11.889,11.889,0,0,1-3.551-.938,11.068,11.068,0,0,1-2.56-1.9c-1.294-1.207-2.489-2.489-3.808-3.609a25.015,25.015,0,0,0-8.712-4.563A41.545,41.545,0,0,0,29.177,50.95a30.642,30.642,0,0,0-9.8.938,19.34,19.34,0,0,0-3.92,1.659,18.036,18.036,0,0,0-2.1,1.381c-.929.709-1.78,1.518-2.738,2.211A8.944,8.944,0,0,1,8.123,58.45a15.644,15.644,0,0,1-2.763.485,5.194,5.194,0,0,0-1.543.369A4.115,4.115,0,0,0,2,61.3V75.364a4.277,4.277,0,0,0,.631,1.307A5.144,5.144,0,0,0,5.456,78.33a7.221,7.221,0,0,0,1.352.245Z" transform="translate(-2 -50.914)"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.236" height="69.401" viewBox="0 0 33.236 69.401"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M11.369,25.777V69.4h10.5V25.777H33.236V15.283H21.867V0h-10.5V15.283H0V25.777Z"/></svg>
+                                            </div>
+                                            <div class="sticker-parent draggable">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="68.856" height="64.874" viewBox="0 0 68.856 64.874"><defs><style>.a{fill:#676464;}</style></defs><path class="a" d="M29.722,42.3c.083-3.319.473-6.588.714-9.927a26.4,26.4,0,0,1,1.174-7.509,10.906,10.906,0,0,1,2.016-3.385,10.487,10.487,0,0,1,1.813-1.61,10.5,10.5,0,0,1,1.813,1.605,10.906,10.906,0,0,1,2.016,3.385,26.66,26.66,0,0,1,1.174,7.509c.241,3.34.631,6.613.714,9.927q.112,1.074.191,2.153a26.742,26.742,0,0,0,2.879,1.56l.249.116q0-.738.066-1.477a20.059,20.059,0,0,1,.527-3.186,18.568,18.568,0,0,1,6.036.776q-.253.884-.5,1.771-.564,2.037-1.091,4.086l.962.34c2.377.83,4.733,1.709,7.148,2.489A33.206,33.206,0,0,1,64.805,53.8a11.378,11.378,0,0,1,2.12,1.659,11.591,11.591,0,0,1,2.941,5.393c-3.676-.987-7.376-1.888-11.076-2.784-5.766-1.394-11.541-2.779-17.424-3.642q-.054.83-.12,1.618-.46,4.646-1.012,9.288-.647,5.642-1.477,11.271a31.669,31.669,0,0,0,2.535,1.941,26.806,26.806,0,0,1,3.759,2.489,4.31,4.31,0,0,1,1.245,1.813,3.879,3.879,0,0,1,.041,1.9c-1.116-.523-2.257-.983-3.418-1.394a28.976,28.976,0,0,0-4.431-1.245q-.83-.153-1.659-.241H34.069q-.83.091-1.659.241a28.977,28.977,0,0,0-4.431,1.245c-1.162.415-2.307.871-3.418,1.394a3.879,3.879,0,0,1,.041-1.9,4.31,4.31,0,0,1,1.245-1.813,25.431,25.431,0,0,1,3.759-2.489A31.675,31.675,0,0,0,32.119,76.6q-.83-5.625-1.5-11.271-.552-4.638-.991-9.288-.071-.809-.12-1.618c-5.862.863-11.641,2.248-17.424,3.642-3.7.9-7.4,1.8-11.076,2.784a11.591,11.591,0,0,1,2.941-5.393A11.379,11.379,0,0,1,6.071,53.8a32.955,32.955,0,0,1,7.181-2.871c2.464-.8,4.771-1.659,7.148-2.489l.962-.34q-.531-2.037-1.1-4.082-.245-.888-.5-1.771a18.568,18.568,0,0,1,6.036-.776,20.058,20.058,0,0,1,.527,3.186q.062.738.066,1.477l.249-.116a26.74,26.74,0,0,0,2.879-1.56Q29.61,43.375,29.722,42.3Z" transform="translate(-1.01 -19.87)"/></svg>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#stickerCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#stickerCarousel" data-slide-to="1"></li>
+                                    <li data-target="#stickerCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                            </div>
+                    </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newletter_header">SUBSCRIBE TO OUR NEWSLETTER</div>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="first-name">* First Name</label>
+                        <input type="text" id="first-name" placeholder="freebies@sales.com">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="email-adress">* Email Adress</label>
+                        <input type="text" id="email-adress" placeholder="freebies@sales.com">
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="support-icon-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26.34" height="26.34" 
+    viewBox="0 0 26.34 26.34"><defs><style>.aa{fill:#676464 !important;}</style></defs><g transform="translate(-11.804 -5.865)"><path class="aa" d="M121,114.474V117.4h13.17a13.168,13.168,0,1,0-10.358-5.035A2.91,2.91,0,0,1,121,114.474Zm17.56-11.707h2.927v2.927H138.56Zm-5.853,0h2.927v2.927h-2.927Zm-5.853,0h2.927v2.927h-2.927Z" transform="translate(-109.196 -85.195)"/></g></svg>
+    <div class="live-chat-wrapper">
+        <div class="chat-head">
+            <div class="header-section">
+                <div class="chat-logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="chat-close">&#10005;</div>
+            </div>
+            <div class="content-section">
+                <h3>Hi There</h3>
+                <div class="welcome-message">Welcome to our website <br> ask us anything</div>
+                <div class="chat-status">We'll reply as soon as we can</div>
+            </div>
+        </div>
+        <div class="message-section">
+            <textarea placeholder="Enter your message"></textarea>
+            <div class="bottom-smile-section">
+                <div class="emoji"></div>
+                <div class="paper-clip"></div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<div class="fix-button-parent">
+    <button class="next-button">
+        <span>Next</span>
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer" enable-background="new 0 0 64 64" height="512px" viewBox="0 0 64 64" width="512px" class="hovered-paths"><g><path d="m54 30h-39.899l15.278-14.552c.8-.762.831-2.028.069-2.828-.761-.799-2.027-.831-2.828-.069l-17.448 16.62c-.755.756-1.172 1.76-1.172 2.829 0 1.068.417 2.073 1.207 2.862l17.414 16.586c.387.369.883.552 1.379.552.528 0 1.056-.208 1.449-.621.762-.8.731-2.065-.069-2.827l-15.342-14.552h39.962c1.104 0 2-.896 2-2s-.896-2-2-2z" data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>    
+    </button>
+</div>
+
+<footer>
+    <div class="faq-parent">
+        <div><a href="#">FAQ</a></div>
+        <div><a href="#">Return Policy</a></div>
+    </div>
+    <div class="support-parent">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13.715" viewBox="0 0 24 13.715"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 -6.428)"><path class="a" d="M27.369,14.5c0-3.341-3.513-6.05-7.846-6.05-.078,0-.154,0-.231,0a6.635,6.635,0,0,1,2.717,5.164c0,2.855-2.094,5.334-5.163,6.571a9.991,9.991,0,0,0,2.678.361,9.431,9.431,0,0,0,4.709-1.21l2.846,1.21-1.11-2.6A5.13,5.13,0,0,0,27.369,14.5Z" transform="translate(-3.369 -0.404)"/><path class="a" d="M15.041,8.478a10.133,10.133,0,0,0-6.283-2.05C3.921,6.428,0,9.451,0,13.181a5.726,5.726,0,0,0,1.566,3.852l-1.238,2.9L3.5,18.583a10.5,10.5,0,0,0,5.254,1.35,10.856,10.856,0,0,0,4.054-.766c2.8-1.127,4.7-3.385,4.7-5.986A6.04,6.04,0,0,0,15.041,8.478ZM5.021,14.094A1.069,1.069,0,1,1,6.09,13.026,1.069,1.069,0,0,1,5.021,14.094Zm3.738,0a1.069,1.069,0,1,1,1.069-1.069A1.069,1.069,0,0,1,8.758,14.094Zm3.738,0a1.068,1.068,0,1,1,1.068-1.068A1.068,1.068,0,0,1,12.5,14.094Z" transform="translate(0 0)"/></g></svg>
+            <span>Live chat: Mon-Fri Am-5Pm EST</span>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.001" height="16.001" viewBox="0 0 16.001 16.001"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M14.717,10.5a9.085,9.085,0,0,1-2.853-.454,1.3,1.3,0,0,0-1.268.267L8.8,11.674A9.943,9.943,0,0,1,4.326,7.2L5.644,5.452a1.293,1.293,0,0,0,.318-1.31,9.1,9.1,0,0,1-.456-2.858A1.285,1.285,0,0,0,4.222,0H1.284A1.285,1.285,0,0,0,0,1.284,14.733,14.733,0,0,0,14.717,16,1.285,1.285,0,0,0,16,14.717v-2.93A1.285,1.285,0,0,0,14.717,10.5Z"/></svg>
+            <span><a href="tel:18002670020">Call us: 1-800-267-0020</a></span>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.218" height="13.877" viewBox="0 0 18.218 13.877"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 -61)"><g transform="translate(0.915 61)"><g transform="translate(0 0)"><path class="a" d="M41.422,61H26.407a1.582,1.582,0,0,0-.686.16l8.158,8.158,1.828-1.757h0l6.4-6.4A1.583,1.583,0,0,0,41.422,61Z" transform="translate(-25.721 -61)"/></g></g><g transform="translate(12.034 61.915)"><g transform="translate(0 0)"><path class="a" d="M344.236,86.728l-6.023,6.023,6.023,6.023a1.582,1.582,0,0,0,.161-.686V87.414A1.582,1.582,0,0,0,344.236,86.728Z" transform="translate(-338.213 -86.728)"/></g></g><g transform="translate(0 61.915)"><g transform="translate(0 0)"><path class="a" d="M.16,86.721a1.583,1.583,0,0,0-.16.686V98.081a1.583,1.583,0,0,0,.16.686l6.023-6.023Z" transform="translate(0 -86.721)"/></g></g><g transform="translate(0.915 68.693)"><g transform="translate(0 0)"><path class="a" d="M36.078,277.211l-1.829,1.757a.533.533,0,0,1-.755,0l-1.758-1.758-6.023,6.023a1.583,1.583,0,0,0,.686.161H41.416a1.582,1.582,0,0,0,.686-.16Z" transform="translate(-25.714 -277.211)"/></g></g></g></svg>
+            <span><a href="mailto:Info@3DES.CA">Email us: Info@3DES.CA</a></span>
+        </div>
+    </div>
+    <div class="privacy-parent">
+        <div><a href="#">PRIVACY & SECURITY</a></div>
+        <div><a href="#">TERMS & CONDITIONS</a></div>
+    </div>
+    <div class="line"></div>
+    <div class="rights-reserved">
+        <div>2020 3des All Rights Reserved</div>
+    </div>
+</footer>
+
+
+<div class="error-message">
+    <div>This screen size is not supported</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/jquery.ui.rotatable.css">
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/jquery.ui.rotatable.min.js"></script>
+
+
+</body>
+</html>

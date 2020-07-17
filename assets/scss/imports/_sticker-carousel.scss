@@ -1,0 +1,35 @@
+.sticker-items-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sticker-parent {
+        width: 112px;
+        height: 104px;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: .3s ease-in;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg .a {
+            fill: #676464;
+            transition: .3s ease-in;
+        }
+
+        &:hover {
+            border-color: #36A7AA;
+        }
+
+        &:hover svg .a {
+            fill: #36A7AA;
+        }
+    }
+}
+
+.sticker-parent.draggable.fr.ui-draggable {
+    position: absolute !important;
+}
