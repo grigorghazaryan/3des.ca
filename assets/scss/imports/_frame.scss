@@ -52,6 +52,7 @@
             top: 11%;
             left: 76%;
             transform: rotate(0.1deg);
+            writing-mode: tb-rl;
         }
 
         .bottom {
@@ -70,6 +71,7 @@
             top: 12%;
             right: 80%;
             transform: rotate(-0.3deg);
+            writing-mode: tb-rl;
         }
     }
 }

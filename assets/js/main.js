@@ -87,6 +87,7 @@ function setFontFamily(value, el) {
         case 'classic':
             el.style.fontFamily = 'WhitneySans';
             el.style.lineHeight = '80px';
+            el.style.fontSize = '4ex';
             break;
         case 'rounded':
             el.style.fontFamily = 'Chewy';
@@ -104,30 +105,36 @@ function setFontFamily(value, el) {
 
 function createElementOnFrame( valueId, frameId ) {
 
-    counter++;
+        counter++;
 
-    let value = document.querySelector( valueId ).value;
+        let value = document.querySelector( valueId ).value;
 
-    if ( value.length !== 0 ) {
-        let font = localStorage.getItem( 'font' ),
-            div = document.createElement( 'div' ),
-            id = (frameId + counter).replace('#','')
+        if ( value.length !== 0 ) {
+            
+            let font = localStorage.getItem( 'font' ),
+                div = document.createElement( 'div' ),
+                id = (frameId + counter).replace('#', '')
 
-        if(frameId == '#right' || frameId == '#left') {
-            div.className = 'textDropable rotate'
-        } else {
-            div.className = 'textDropable'
+            if(frameId == '#right' || frameId == '#left') {
+                div.className = 'textDropable rotate'
+            } else {
+                div.className = 'textDropable'
+            }
+
+            div.id = id;
+            div.innerHTML = value;
+
+            setTimeout( () => {
+                let w = div.offsetWidth + 2;
+                div.style.width = w + 'px';
+            }, 0 );
+
+            setFontFamily( font, div );
+            document.querySelector( frameId ).append( div );
+
+            $( '#'+id ).draggable( { containment: frameId} )            
         }
-        div.id = id;
-        div.innerHTML = value;
-        setFontFamily( font, div );
-        document.querySelector( frameId ).append( div );
 
-
-        $( '#'+id ).draggable( { containment: frameId } )
-        console.log(id, frameId)
-        
-    }
 }
 
 function clearInputs() {
@@ -151,9 +158,8 @@ document.querySelector( '.apply-button' ).onclick = function () {
     createElementOnFrame('#bottom-input', '#bottom');
     createElementOnFrame('#right-input', '#right');
     createElementOnFrame( '#left-input', '#left' );
-    
+
     clearInputs();
-    
 }
 
 $( "input[type='radio']" ).click( function () {

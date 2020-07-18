@@ -185,15 +185,14 @@
 }
 .textDropable {
     display: inline-block;
-    font-size: 30px;
+    width: fit-content;
+    font-size: 4.95ex;
+    line-height: 49px;
     cursor: grab;
-    font-size: 5.1ex;
-    line-height: 48px;
-    height: 45px;
+    width: max-content;
 }
 .rotate {
-    transform: rotate(-90deg);
-    width: max-content;
+    transform: rotate(180deg);
 }
 
 .checked-font {
