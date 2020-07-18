@@ -60,15 +60,21 @@ header {
                 background: #FFF;
                 border: 1px solid #707070;
                 border-radius: 11px;
-                padding: 12px 8px 0 8px;
                 line-height: 1;
                 color: #BFBEBE;
+                display: flex;
+                padding: 11px 8px 0 8px;
 
-                span {
+                .line {
+                    margin: 0 8.5px;
+                    color: #BFBEBE;
+                }
+
+                div {
                     cursor: pointer
                 }
 
-                span:nth-child(2) {
+                div:nth-child(3) {
                     color: #252525;
                 }
             }
